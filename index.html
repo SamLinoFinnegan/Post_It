@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Post It</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Post It</h1>
+    </div>
+    <div class="form">
+        <textarea type="text" id="text"></textarea>
+        <button id="button">Submit</button>
+    </div>
+    <div class="content_div">
+        <p id="content"></p>
+    </div>
+    <script>
+        document.getElementById("button").addEventListener("click", () => {
+            let value = document.getElementById("text").value
+            document.getElementById("content").innerText = value
+        })
+    </script>
+</body>
+</html>
